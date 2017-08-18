@@ -1,6 +1,7 @@
 {
-    "id": "nodebb-theme-quickstart",
-    "name": "My Theme Name",
-    "description": "Enter a description here",
-    "url": "https://github.com/nodebb/nodebb-theme-quickstart"
+    "id": "nodebb-theme-careerwaze",
+    "name": "Careerwaze",
+    "description": "Careerwaze custom theme for nodebb",
+    "url": "https://github.com/santoshcareerwaze/nodebb-theme-careerwaze.git",
+    "screenshot":"screenshot.png"
 }

@@ -1,10 +1,22 @@
 {
-  "name": "nodebb-theme-quickstart",
-  "version": "0.0.0",
-  "description": "Enter a description here",
-  "main": "theme.less",
-  "keywords": [
+    "name": "nodebb-theme-careerwaze",
+    "version": "0.0.1",
+    "description": "Careerwaze custom theme for nodebb",
+    "main": "theme.less",
+    "keywords": [
 
-  ],
-  "license": "MIT"
+    ],
+    "author": {
+        "name": "Santosh Kumar",
+        "email": "santoshkumar@careerwaze.com",
+        "url": "https://careerwaze.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/santoshcareerwaze/nodebb-theme-careerwaze"
+    },
+    "bugs": {
+        "url": "https://github.com/santoshcareerwaze/nodebb-theme-careerwaze/issues"
+    },
+    "license": "MIT"
 }
