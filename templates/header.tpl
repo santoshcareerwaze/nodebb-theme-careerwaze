@@ -126,7 +126,7 @@
 							</li>
 							<li ng-class="{ active: isActive('/myforum') }">
 								<a href="{relative_path}">
-									<span class=nav-text>MY FORUM</span>
+									<span class=nav-text>MY FORUMS</span>
 								</a>
 							</li>
 						</ul>
