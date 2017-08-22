@@ -42,6 +42,8 @@
 	<!-- ENDIF useCustomCSS -->
 </head>
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
+Releative path: {relative_path}
+Relative path: {config.relative_path}
 	<nav id="menu" class="hidden">
 		<section class="menu-profile">
 			<!-- IF user.uid -->
@@ -92,7 +94,7 @@
     				console.log("debug @stmt:: daa ", data);
     				console.log("Debug @stmt:: app ", app.user.uid);
     				if (data.url === 'login' || data.url === 'register' || !app.user.uid) {
-            			window.location.href =  'http://52.42.225.80:4567';
+            			window.location.href =  'http://localhost:9001';
     				}
 				});
 			</script> -->
@@ -123,17 +125,17 @@
 								<a href="{config.careerwazeWebAppUrl}/#/account/details">
 									<span class=nav-text>MY ACCOUNT</span>
 								</a>
-							</li>
+							</li>{relative_path}{relative_path}{config.relative_path}
 							<li ng-class="{ active: isActive('/myforum') }">
 								<a href="{relative_path}">
-									<span class=nav-text>MY FORUMS</span>
+									<span class=nav-text>MY FORUM</span>
 								</a>
 							</li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav navbar-right" id="user-control-list" component="header/usercontrol">
 							<li class="header-cart-count">
 								<a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
-									<img class="careerwaze-header-cart" src = "{config.careerwazeWebAppUrl}/images/cart-assets/header-cart.png">
+									<img class="careerwaze-header-cart" src = "/plugins/nodebb-theme-careerwaze/images/header-cart.png">
 									<b class="cart-count">0</b>
 								</a>
 							</li>
@@ -154,8 +156,37 @@
 									<a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10" data-close-others="false"><span class=nav-text>Hi <span style="text-transform: capitalize;">{user.username}</span></span> <b class="caret"></b>
             </a>
 									<ul class="dropdown-menu">
+									<li>
+								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
+								</a>
+							</li>
+							<li role="presentation" class="divider"></li>
+										<li>
+								<a href="#" class="user-status" data-status="online">
+									<i class="fa fa-fw fa-circle status online"></i><span> [[global:online]]</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="user-status" data-status="away">
+									<i class="fa fa-fw fa-circle status away"></i><span> [[global:away]]</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="user-status" data-status="dnd">
+									<i class="fa fa-fw fa-circle status dnd"></i><span> [[global:dnd]]</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="user-status" data-status="offline">
+									<i class="fa fa-fw fa-circle status offline"></i><span> [[global:invisible]]</span>
+								</a>
+							</li>
+			
 										<li style="border-bottom: 1px solid #e9eef4 ;"><a href="http://localhost:9001/#/feedback" tabindex="-1">FeedBack</a></li>
-										<li><a ng-click="logout();" tabindex="-1" href="#">Logout</a></li>
+										<li component="user/logout">
+											<a href="#"><span> [[global:logout]]</span></a>
+										 </li>
 									</ul>
 								</li>
 						</ul>
