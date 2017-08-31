@@ -109,30 +109,30 @@ Relative path: {config.relative_path}
          					<img  src="https://s3-us-west-2.amazonaws.com/careerwaze-dev-useruploads/app-images/logo_with_title.png" />
       					</a>
 					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav" bs-active-link>
+					<div class="collapse navbar-collapse" id="myNavbar"   style="min-height: 70px;">
+						<ul class="nav navbar-nav" bs-active-link style="margin-top: 12px;">
 							<li ng-class="{ active: isActive('/learn') }">
 								<a href="{config.careerwazeWebAppUrl}/#/learn/recommendations">
-									<span class=nav-text>LEARN</span>
+									<span class=nav-text><b>LEARN</b></span>
 								</a>
 							</li>
 							<li ng-class="{ active: isActive('/explore') }">
 								<a href="{config.careerwazeWebAppUrl}/#/explore-skills">
-									<span class="nav-text">EXPLORE</span>
+									<span class="nav-text"><b>EXPLORE</b></span>
 								</a>
 							</li>
 							<li ng-class="{ active: isActive('/account') }">
 								<a href="{config.careerwazeWebAppUrl}/#/account/details">
-									<span class=nav-text>MY ACCOUNT</span>
+									<span class=nav-text><b>MY ACCOUNT</b></span>
 								</a>
 							</li>{relative_path}{relative_path}{config.relative_path}
 							<li ng-class="{ active: isActive('/myforum') }">
 								<a href="{relative_path}">
-									<span class=nav-text>MY FORUM</span>
+									<span class=nav-text><b style="color: #fff !important;">MY FORUMS</b></span>
 								</a>
 							</li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right" id="user-control-list" component="header/usercontrol">
+						<ul class="nav navbar-nav navbar-right" id="user-control-list" component="header/usercontrol" style="margin-top: 12px;">
 							<li class="header-cart-count">
 								<a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
 									<img class="careerwaze-header-cart" src = "/plugins/nodebb-theme-careerwaze/images/header-cart.png">
@@ -152,9 +152,9 @@ Relative path: {config.relative_path}
 													<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
 									</a>
 								</li>
-								<li class="dropdown ">
-									<a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10" data-close-others="false"><span class=nav-text>Hi <span style="text-transform: capitalize;">{user.username}</span></span> <b class="caret"></b>
-            </a>
+								<li class="dropdown" style="margin-left: 10px;cursor: pointer;">
+									<p style="margin-top: 15px;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10" data-close-others="false"><span class=nav-text style="color: #9d9d9d;"><b>Hi</b> <span style="color: #9d9d9d;"><b>{user.username}</b></span></span> <b class="caret"></b>
+                                  </p>
 									<ul class="dropdown-menu">
 									<li>
 								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
@@ -198,6 +198,7 @@ Relative path: {config.relative_path}
 					<!-- IMPORT partials/menu.tpl -->
 				</div>
 			</nav>
-	</div><br><br><br>
+	</div>
+	<br><br><br>
 	<div class="container" id="content" style="min-height:470px;">
 		<!-- IMPORT partials/noscript/warning.tpl -->
