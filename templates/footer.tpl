@@ -20,7 +20,7 @@
 		<p>[[global:reconnecting-message, {config.siteTitle}]]</p>
 	</div>
 </div>
-<div>
+<div style="margin-bottom: -50px">
 	<footer>
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
