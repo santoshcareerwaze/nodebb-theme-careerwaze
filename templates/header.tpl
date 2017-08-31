@@ -125,7 +125,7 @@ Relative path: {config.relative_path}
 								<a href="{config.careerwazeWebAppUrl}/#/account/details">
 									<span class=nav-text><b>MY ACCOUNT</b></span>
 								</a>
-							</li>{relative_path}{relative_path}{config.relative_path}
+							</li>
 							<li ng-class="{ active: isActive('/myforum') }">
 								<a href="{relative_path}">
 									<span class=nav-text><b style="color: #fff !important;">MY FORUMS</b></span>
@@ -177,13 +177,13 @@ Relative path: {config.relative_path}
 									<i class="fa fa-fw fa-circle status dnd"></i><span> [[global:dnd]]</span>
 								</a>
 							</li>
-							<li>
+							<li style="border-bottom: 1px solid #e9eef4;">
 								<a href="#" class="user-status" data-status="offline">
 									<i class="fa fa-fw fa-circle status offline"></i><span> [[global:invisible]]</span>
 								</a>
 							</li>
 			
-										<li style="border-bottom: 1px solid #e9eef4 ;"><a href="http://localhost:9001/#/feedback" tabindex="-1">FeedBack</a></li>
+										<li><a href="{config.careerwazeWebAppUrl}/#/feedback" tabindex="-1">FeedBack</a></li>
 										<li component="user/logout">
 											<a href="#"><span> [[global:logout]]</span></a>
 										 </li>
