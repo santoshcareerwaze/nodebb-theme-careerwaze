@@ -200,5 +200,5 @@ Relative path: {config.relative_path}
 			</nav>
 	</div>
 	<br><br><br>
-	<div class="container" id="content" style="min-height:900px;">
+	<div class="container" id="content" style="min-height:470px;">
 		<!-- IMPORT partials/noscript/warning.tpl -->
