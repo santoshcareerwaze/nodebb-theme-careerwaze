@@ -128,7 +128,7 @@ Relative path: {config.relative_path}
 							</li>
 							<li ng-class="{ active: isActive('/myforum') }">
 								<a href="{relative_path}">
-									<span class=nav-text><b style="color: #fff !important;">MY FORUMS</b></span>
+									<span class=nav-text><b style="color: #fff !important;">COMMUNITY</b></span>
 								</a>
 							</li>
 						</ul>
