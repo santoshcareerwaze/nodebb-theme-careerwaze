@@ -22,7 +22,7 @@
 </div>
 <div style="margin-bottom: -50px">
 	<footer>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="myNavbar1">
 					<ul class="nav navbar-nav">
