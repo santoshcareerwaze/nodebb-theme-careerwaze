@@ -194,10 +194,10 @@ Relative path: {config.relative_path}
 				<div style="background-color: white;">
 					<ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 450px;">
             			<li>
-                			<a href="" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
+                			<a href="http://localhost:4567" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
             			</li>
-            			<li ng-class="{ active: isActive('/all-peerlearners')}" ng-click="setNavActive('all-peerlearners');">
-                				<a href="" style="font-size:16px;font-weight:700;color:black !important;">Peer Learners</a>
+            			<li>
+                				<a href="http://localhost:9001/all-peerlearners" style="font-size:16px;font-weight:700;color:black !important;">Peer Learners</a>
             			</li>           
     				</ul>
 				</div>
