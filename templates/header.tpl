@@ -132,14 +132,6 @@ Relative path: {config.relative_path}
 								</a>
 							</li>
 						</ul>
-						<ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 195px;">
-            				<li>
-                				<a href="">Forums</a>
-            				</li>
-            				<li ng-class="{ active: isActive('/all-peerlearners')}" ng-click="setNavActive('all-peerlearners');">
-                				<a href="">Peer Learners</a>
-            				</li>           
-    					</ul>
 						<ul class="nav navbar-nav navbar-right" id="user-control-list" component="header/usercontrol" style="margin-top: 12px;">
 							<li class="header-cart-count">
 								<a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
@@ -199,6 +191,16 @@ Relative path: {config.relative_path}
 								</li>
 						</ul>
 					</div>
+				</div>
+				<div>
+					<ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 195px;">
+            			<li>
+                			<a href="">Forums</a>
+            			</li>
+            			<li ng-class="{ active: isActive('/all-peerlearners')}" ng-click="setNavActive('all-peerlearners');">
+                				<a href="">Peer Learners</a>
+            			</li>           
+    				</ul>
 				</div>
 				<div style="border-top: 1px solid #fff">
 				</div>
