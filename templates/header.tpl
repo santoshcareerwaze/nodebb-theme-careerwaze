@@ -191,7 +191,7 @@ Relative path: {config.relative_path}
 						</ul>
 					</div>
 				</div>
-				<div>
+				<div style="background-color: white;">
 					<ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 450px;">
             			<li>
                 			<a href="" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
