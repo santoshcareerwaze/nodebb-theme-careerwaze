@@ -182,7 +182,6 @@ Relative path: {config.relative_path}
 									<i class="fa fa-fw fa-circle status offline"></i><span> [[global:invisible]]</span>
 								</a>
 							</li>
-			
 										<li><a href="{config.careerwazeWebAppUrl}/#/feedback" tabindex="-1">FeedBack</a></li>
 										<li component="user/logout">
 											<a href="#"><span> [[global:logout]]</span></a>
@@ -193,12 +192,12 @@ Relative path: {config.relative_path}
 					</div>
 				</div>
 				<div>
-					<ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 195px;">
+					<ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 450px;">
             			<li>
-                			<a href="">Forums</a>
+                			<a href="" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
             			</li>
             			<li ng-class="{ active: isActive('/all-peerlearners')}" ng-click="setNavActive('all-peerlearners');">
-                				<a href="">Peer Learners</a>
+                				<a href="" style="font-size:16px;font-weight:700;color:black !important;">Peer Learners</a>
             			</li>           
     				</ul>
 				</div>
