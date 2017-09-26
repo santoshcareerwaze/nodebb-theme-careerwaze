@@ -201,7 +201,7 @@
                         </li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                         <li>
-                            <a href="http://localhost:9001/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;">Peer Learners</a>
+                            <a href="{config.careerwazeWebAppUrl}/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;">Peer Learners</a>
                         </li>
                     </ul>
                 </div>
