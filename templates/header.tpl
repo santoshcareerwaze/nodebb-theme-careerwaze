@@ -120,15 +120,15 @@
 									<span class="nav-text"><b>EXPLORE</b></span>
 								</a>
                             </li>
-                            <li ng-class="{ active: isActive('/account') }">
-                                <a href="{config.careerwazeWebAppUrl}/#/account/details">
-									<span class=nav-text><b>MY ACCOUNT</b></span>
-								</a>
-                            </li>
                             <li ng-class="{ active: isActive('/myforum') }">
                                 <a href="{relative_path}">
 									<span class=nav-text><b style="color: #fff !important;">COMMUNITY</b></span>
 								</a>
+                            </li>
+                            <li ng-class="{ active: isActive('/account') }">
+                                <a href="{config.careerwazeWebAppUrl}/#/account/details">
+                                    <span class=nav-text><b>MY ACCOUNT</b></span>
+                                </a>
                             </li>
                             <!-- IF user.usertype==='CONSUMER' -->
                             <li id='jobs' ng-class="{ active: isActive('/jobs') }">
