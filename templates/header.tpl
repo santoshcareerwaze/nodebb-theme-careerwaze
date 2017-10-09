@@ -22,9 +22,11 @@
     //console.log(JSON.stringify(app));
     function myFunction() {
         if (app.user.usertype === 'CONSUMER') {
-            document.getElementById("jobs").style.display = "block";
+             document.getElementById("jobs").style.display = "block";
+            document.getElementById("peerlearners").innerHTML = "My Network";
         } else {
             document.getElementById("jobs").style.display = "none";
+            document.getElementById("peerlearners").innerHTML = "Peer Learners";
         }
     }
     </script>
@@ -205,7 +207,7 @@
                         </li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                         <li>
-                            <a href="{config.careerwazeWebAppUrl}/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;">Peer Learners</a>
+                            <a href="{config.careerwazeWebAppUrl}/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;"><p id="peerlearners"></p></a>
                         </li>
                     </ul>
                 </div>
