@@ -22,13 +22,14 @@
 </div>
 <div style="margin-bottom: -50px">
 	<footer>
-		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="myNavbar1">
 					<ul class="nav navbar-nav">
 						<!-- <li class="user-profile-photo-line"><span>.</span></li> -->
 						<li><a class="footer-link"><span>&copy; CareerWaze 2017</span></a></li>
-						<li><a target="_blank" href=""><span>Privacy Policy</span></a></li>
+						<li><a target="_blank" href="{config.careerwazeWebAppUrl}/#/privacy-poilcy"><span>Privacy Policy</span></a></li>
+						<li><a target="_blank" href="{config.careerwazeWebAppUrl}/#/terms-of-use"><span>Terms of Use</span></a></li>
 						<li><a target="_blank" href="http://careerwaze.com/about.html"><span>About Us</span></a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -51,6 +52,7 @@
 </div>
 <script>
 	require(['forum/footer']);
+	// var config = JSON.parse('{{configJSON}}');
 </script>
 </body>
 </html

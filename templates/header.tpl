@@ -90,15 +90,15 @@
     <div>
         <main id="panel">
             <nav class="navbar navbar-inverse navbar-fixed-top header" id="header-menu" component="navbar">
-                <!-- <script>
-                $(window).on('action:ajaxify.end', function(ev, data){
-                    console.log("debug @stmt:: daa ", data);
-                    console.log("Debug @stmt:: app ", app.user.uid);
-                    if (data.url === 'login' || data.url === 'register' || !app.user.uid) {
-                        window.location.href =  'http://localhost:9001';
-                    }
-                });
-            </script> -->
+                <script>
+                    $(window).on('action:ajaxify.end', function(ev, data){
+                        console.log("debug @stmt:: daa ", data);
+                        console.log("Debug @stmt:: app ", app.user.uid);
+                        if (data.url === 'login' || data.url === 'register' || !app.user.uid) {
+                            window.location.href =  'https://learn.careerwaze.com';
+                        }
+                    });
+                </script>
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -203,7 +203,7 @@
                 <div style="background-color: white;">
                     <ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 450px;">
                         <li>
-                            <a href="http://localhost:4567" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
+                            <a href="{relative_path}" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
                         </li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                         <li>
@@ -221,5 +221,5 @@
     <br>
     <br>
     <br>
-    <div class="container" id="content" style="min-height:600px;">
+    <div class="container" id="content" style="min-height:782px;padding-top:50px;padding-bottom:40px;">
         <!-- IMPORT partials/noscript/warning.tpl -->
