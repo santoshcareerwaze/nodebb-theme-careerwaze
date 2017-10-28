@@ -95,7 +95,7 @@
                         console.log("debug @stmt:: daa ", data);
                         console.log("Debug @stmt:: app ", app.user.uid);
                         if (data.url === 'login' || data.url === 'register' || !app.user.uid) {
-                            window.location.href =  'https://learn.careerwaze.com';
+                            //window.location.href =  'https://learn.careerwaze.com';
                         }
                     });
                 </script>
