@@ -90,15 +90,15 @@
     <div>
         <main id="panel">
             <nav class="navbar navbar-inverse navbar-fixed-top header" id="header-menu" component="navbar">
-                <script>
+                <!-- <script>
                     $(window).on('action:ajaxify.end', function(ev, data){
                         console.log("debug @stmt:: daa ", data);
                         console.log("Debug @stmt:: app ", app.user.uid);
                         if (data.url === 'login' || data.url === 'register' || !app.user.uid) {
-                            //window.location.href =  'https://learn.careerwaze.com';
+                            /window.location.href =  'https://learn.careerwaze.com';
                         }
                     });
-                </script>
+                </script> -->
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
