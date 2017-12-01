@@ -201,22 +201,7 @@
                     </div>
                 </div>
                 <div style="background-color: white;">
-                    <ul class="nav nav-tabs sub-headers-nav visible-lg visible-md visible-sm" style="border-bottom: none !important; margin-left: 450px;">
-                        <li>
-                            <a href="{relative_path}" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
-                        </li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li>
-                            <a href="{config.careerwazeWebAppUrl}/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;"><p id="peerlearners"></p></a>
-                        </li>
-                        <li>
-                            <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meet Ups</p></a>
-                        </li>
-                        <li>
-                            <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-tabs sub-headers-nav visible-xs" style="border-bottom: none !important; margin-left: 50px;">
+                    <ul class="nav nav-tabs sub-headers-nav visible-lg visible-md visible-sm" style="border-bottom: none !important; margin-left: 300px;">
                         <li>
                             <a href="{relative_path}" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
                         </li>
