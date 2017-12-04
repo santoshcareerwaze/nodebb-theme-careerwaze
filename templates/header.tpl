@@ -24,9 +24,11 @@
         if (app.user.usertype === 'CONSUMER') {
              document.getElementById("jobs").style.display = "block";
             document.getElementById("peerlearners").innerHTML = "My Network";
+             document.getElementById("mentors").style.display = "none";
         } else {
             document.getElementById("jobs").style.display = "none";
             document.getElementById("peerlearners").innerHTML = "Peer Learners";
+            document.getElementById("mentors").style.display = "block";
         }
     }
     </script>
@@ -212,7 +214,7 @@
                         <li>
                             <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meet Ups</p></a>
                         </li>
-                        <li>
+                        <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
                         </li>
                     </ul>
