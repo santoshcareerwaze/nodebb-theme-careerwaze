@@ -229,5 +229,5 @@
     <br>
     <br>
     <br>
-    <div class="container" id="content" style="min-height:782px;padding-top:210px;padding-bottom:40px;">
+    <div class="container" id="content" style="min-height:782px;padding-top:50px;padding-bottom:40px;">
         <!-- IMPORT partials/noscript/warning.tpl -->
