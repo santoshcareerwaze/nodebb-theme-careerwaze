@@ -129,14 +129,14 @@
                                     <span class=nav-text><b style="color: #fff !important;">COMMUNITY</b></span>
                                 </a>
                             </li>
+                            <!-- IF user.usertype==='CONSUMER' -->
+                            <li id='jobs' ng-class="{ active: isActive('/jobs') }">
+                                <a href="{config.careerwazeWebAppUrl}/#/recommended/jobs"><span class=nav-text>JOBS</span></a>
+                            </li>
                             <li ng-class="{ active: isActive('/account') }">
                                 <a href="{config.careerwazeWebAppUrl}/#/account/details">
                                     <span class=nav-text><b>MY ACCOUNT</b></span>
                                 </a>
-                            </li>
-                            <!-- IF user.usertype==='CONSUMER' -->
-                            <li id='jobs' ng-class="{ active: isActive('/jobs') }">
-                                <a href="{config.careerwazeWebAppUrl}/#/recommended/jobs"><span class=nav-text>JOBS</span></a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right" id="user-control-list" component="header/usercontrol" style="margin-top: 12px;">
