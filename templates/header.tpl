@@ -102,7 +102,7 @@
                     });
                 </script> -->
                 <div class="container-fluid">
-                    <div class="navbar-header">
+                    <div class="navbar-header" style="min-height: 70px;">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -203,7 +203,22 @@
                     </div>
                 </div>
                 <div style="background-color: white;">
-                    <ul class="nav nav-tabs sub-headers-nav" style="border-bottom: none !important; margin-left: 450px;">
+                    <ul class="nav nav-tabs sub-headers-nav hidden-xs hidden-sm" style="border-bottom: none !important; margin-left: 450px;">
+                        <li>
+                            <a href="{relative_path}" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li>
+                            <a href="{config.careerwazeWebAppUrl}/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;"><p id="peerlearners"></p></a>
+                        </li>
+                        <li>
+                            <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meet Ups</p></a>
+                        </li>
+                        <li id="mentors">
+                            <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
+                        </li>
+                    </ul>
+                     <ul class="nav nav-tabs sub-headers-nav hidden-md hidden-lg" style="border-bottom: none !important; margin-left:35px;">
                         <li>
                             <a href="{relative_path}" style="font-size:16px;font-weight:700;color:black !important; border-bottom:3px solid #2A9FD8;">Forums</a>
                         </li>
