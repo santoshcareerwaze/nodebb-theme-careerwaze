@@ -214,9 +214,9 @@
                         <li>
                             <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meet Ups</p></a>
                         </li>
-                        <li id="mentors">
+                        <!-- <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
-                        </li>
+                        </li> -->
                     </ul>
                      <ul class="nav nav-tabs sub-headers-nav hidden-md hidden-lg" style="border-bottom: none !important; margin-left:35px;">
                         <li>
@@ -229,9 +229,9 @@
                         <li>
                             <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meet Ups</p></a>
                         </li>
-                        <li id="mentors">
+                        <!-- <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div style="border-top: 1px solid #fff">
