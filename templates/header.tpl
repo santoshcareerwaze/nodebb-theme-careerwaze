@@ -109,7 +109,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" a href="{config.careerwazeWebAppUrl}/#/feed">
-                            <img  src="https://s3-us-west-2.amazonaws.com/careerwaze-dev-useruploads/app-images/logo_with_title.png" />
+                            <img  src="https://s3-us-west-2.amazonaws.com/careerwaze-dev-useruploads/app-images/logoWithText.png" />
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar" style="min-height: 70px;">
