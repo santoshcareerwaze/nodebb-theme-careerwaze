@@ -212,7 +212,7 @@
                             <a href="{config.careerwazeWebAppUrl}/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;"><p id="peerlearners"></p></a>
                         </li>
                         <li>
-                            <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meet Ups</p></a>
+                            <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meetups</p></a>
                         </li>
                         <!-- <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
@@ -227,7 +227,7 @@
                             <a href="{config.careerwazeWebAppUrl}/#/all-peerlearners/All" style="font-size:16px;font-weight:700;color:black !important;"><p id="peerlearners"></p></a>
                         </li>
                         <li>
-                            <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meet Ups</p></a>
+                            <a href="{config.careerwazeWebAppUrl}/#/meetups" style="font-size:16px;font-weight:700;color:black !important;"><p id="meetups">Meetups</p></a>
                         </li>
                         <!-- <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
