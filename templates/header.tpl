@@ -255,11 +255,11 @@
                                 <p id="meetups">Meetups</p>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="{config.careerwazeWebAppUrl}/#/leaderboard" style="font-size:16px;font-weight:700;color:black !important;">
                                 <p id="leaderboard">Leaderboard</p>
                             </a>
-                        </li>
+                        </li> -->
                         <!-- <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
                         </li> -->
@@ -279,11 +279,11 @@
                                 <p id="meetups">Meetups</p>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="{config.careerwazeWebAppUrl}/#/leaderboard" style="font-size:16px;font-weight:700;color:black !important;">
                                 <p id="leaderboard">Leaderboard</p>
                             </a>
-                        </li>
+                        </li> -->
                         <!-- <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
                         </li> -->
