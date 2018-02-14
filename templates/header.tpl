@@ -24,14 +24,14 @@
             if (app.user.usertype === 'CONSUMER') {
                 document.getElementById("jobs").style.display = "block";
                 document.getElementById("peerlearners").innerHTML = "My Network";
-                //  document.getElementById("mentors").style.display = "none";
+                 document.getElementById("mentors").style.display = "none";
                 document.getElementById("user-control-list").children[0].style.display = "none"
                 document.getElementById("user-control-list").children[1].style.display = "none"
                 document.getElementById("user-control-list").children[3].style.display = "none"
             } else {
                 document.getElementById("jobs").style.display = "none";
                 document.getElementById("peerlearners").innerHTML = "Peer Learners";
-                // document.getElementById("mentors").style.display = "block";
+                document.getElementById("mentors").style.display = "block";
                 document.getElementById("cart").style.display = "block";
                 document.getElementById("user-control-list").children[0].style.display = "block"
                 document.getElementById("user-control-list").children[1].style.display = "block"
@@ -255,14 +255,14 @@
                                 <p id="meetups">Meetups</p>
                             </a>
                         </li>
-                        <!-- <li>
+                        <li>
                             <a href="{config.careerwazeWebAppUrl}/#/leaderboard" style="font-size:16px;font-weight:700;color:black !important;">
                                 <p id="leaderboard">Leaderboard</p>
                             </a>
-                        </li> -->
-                        <!-- <li id="mentors">
+                        </li>
+                        <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
-                        </li> -->
+                        </li> 
                     </ul>
                     <ul class="nav nav-tabs sub-headers-nav hidden-md hidden-lg" style="border-bottom: none !important; margin-left:35px;">
                         <li>
@@ -279,14 +279,14 @@
                                 <p id="meetups">Meetups</p>
                             </a>
                         </li>
-                        <!-- <li>
+                        <li>
                             <a href="{config.careerwazeWebAppUrl}/#/leaderboard" style="font-size:16px;font-weight:700;color:black !important;">
                                 <p id="leaderboard">Leaderboard</p>
                             </a>
-                        </li> -->
-                        <!-- <li id="mentors">
+                        </li>
+                        <li id="mentors">
                             <a href="{config.careerwazeWebAppUrl}/#/mentoring" style="font-size:16px;font-weight:700;color:black !important;"><p id="Mentors ">Mentors</p></a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
                 <div style="border-top: 1px solid #fff">
