@@ -40,7 +40,7 @@
                     <li><a target= "_blank" href="https://www.careerwaze.com/about.html"><span>About Us</span></a></li>
                 </ul>
                 <ul class="footer-icon nav navbar-nav pull-right footer-text list-style-type: none;">
-                    <li style="margin-top: 3px;"><a class="footer-link"><span>V3.0.1</span></a></li>
+                    <li style="margin-top: 3px;"><a class="footer-link"><span>V3.2</span></a></li>
 					<li><a target="_blank" href="https://www.facebook.com/CareerWaze-962002113893060/"><img src="https://s3-us-west-2.amazonaws.com/careerwaze-dev-useruploads/app-images/facebook_footer.png"></a></li>
 					<li><a target="_blank" href="https://twitter.com/careerwaze"><img src="https://s3-us-west-2.amazonaws.com/careerwaze-dev-useruploads/app-images/linkedin_footer.png"></a></li>
 					<li><a target="_blank" href="https://www.linkedin.com/company/careerwaze"><img src="https://s3-us-west-2.amazonaws.com/careerwaze-dev-useruploads/app-images/twitter_footer.png"></a></li>
