@@ -140,7 +140,7 @@
                             <li ng-class="{ active: isActive('/myforum') }">
                                 <a href="{relative_path}">
                                     <span class=nav-text>
-                                        <b style="color: #fff !important;">COMMUNITY</b>
+                                        <b style="color: #ece2e2 !important;">COMMUNITY</b>
                                     </span>
                                 </a>
                             </li>
