@@ -21,7 +21,10 @@
         };
         //console.log(JSON.stringify(app));
         function myFunction() {
-            if (app.user.usertype === 'CONSUMER') {
+            console.log("in myfunction user object : "+JSON.stringify(app.user));
+            console.log("in myFunction customer id : "+app.user.customer_id);
+            if (app.user.usertype === 'CONSUMER') 
+            {
                 document.getElementById("jobs").style.display = "block";
                 document.getElementById("peerlearners").innerHTML = "My Network";
                  document.getElementById("mentors").style.display = "none";
