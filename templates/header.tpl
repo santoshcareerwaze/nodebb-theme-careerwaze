@@ -24,12 +24,13 @@
             console.log("in myfunction user object : "+JSON.stringify(app.user));
             var name='customer_id';
             var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+            var IIDT=r[1];
             console.log("r is : "+r);
             console.log("r[1] :"+r[1]);
-            console.log("r[0] :"+r[0]);
+            
 
             console.log("in myFunction customer id : "+app.user.customer_id);
-            if (app.user.usertype === 'CONSUMER') 
+            if (app.user.usertype === 'CONSUMER' || IIDT==='AWU3iqob9DwsJ9K4ShdN') 
             {
                 document.getElementById("jobs").style.display = "block";
                 document.getElementById("peerlearners").innerHTML = "My Network";
