@@ -22,6 +22,12 @@
         //console.log(JSON.stringify(app));
         function myFunction() {
             console.log("in myfunction user object : "+JSON.stringify(app.user));
+            var name='customer_id';
+            var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+            console.log("r is : "+r);
+            console.log("r[1] :"+r[1]);
+            console.log("r[0] :"+r[0]);
+
             console.log("in myFunction customer id : "+app.user.customer_id);
             if (app.user.usertype === 'CONSUMER') 
             {
