@@ -31,7 +31,7 @@
             
 
             console.log("in myFunction customer id : "+app.user.customer_id);
-            if (app.user.usertype === 'CONSUMER' || IIDT==='AWU3iqob9DwsJ9K4ShdN' || APSSDC==='AWV6_3cgSoa-SE8nRK8C') 
+            if (app.user.usertype === 'CONSUMER' ) 
             {
                 document.getElementById("jobs").style.display = "block";
                 document.getElementById("peerlearners").innerHTML = "My Network";
@@ -39,7 +39,18 @@
                 document.getElementById("user-control-list").children[0].style.display = "none"
                 document.getElementById("user-control-list").children[1].style.display = "none"
                 document.getElementById("user-control-list").children[3].style.display = "none"
-            } else {
+            } 
+        else if(IIDT==='AWU3iqob9DwsJ9K4ShdN' || APSSDC==='AWV6_3cgSoa-SE8nRK8C')
+            {
+                 document.getElementById("jobs").style.display = "block";
+                document.getElementById("peerlearners").innerHTML = "Peer Learners";
+                document.getElementById("mentors").style.display = "block";
+                document.getElementById("cart").style.display = "block";
+                document.getElementById("user-control-list").children[0].style.display = "block"
+                document.getElementById("user-control-list").children[1].style.display = "block"
+                document.getElementById("user-control-list").children[3].style.display = "block"
+            }
+            else {
                 document.getElementById("jobs").style.display = "none";
                 document.getElementById("peerlearners").innerHTML = "Peer Learners";
                 document.getElementById("mentors").style.display = "block";
