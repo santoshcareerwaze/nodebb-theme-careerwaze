@@ -25,12 +25,13 @@
             var name='customer_id';
             var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
             var IIDT=r[1];
-            console.log("r is : "+r);
-            console.log("r[1] :"+r[1]);
+            var APSSDC=r[1];
+            console.log("APSSDC : "+APSSDC);
+            console.log("IIDT :"+IIDT);
             
 
             console.log("in myFunction customer id : "+app.user.customer_id);
-            if (app.user.usertype === 'CONSUMER' || IIDT==='AWU3iqob9DwsJ9K4ShdN') 
+            if (app.user.usertype === 'CONSUMER' || IIDT==='AWU3iqob9DwsJ9K4ShdN' || APSSDC==='AWV6_3cgSoa-SE8nRK8C') 
             {
                 document.getElementById("jobs").style.display = "block";
                 document.getElementById("peerlearners").innerHTML = "My Network";
