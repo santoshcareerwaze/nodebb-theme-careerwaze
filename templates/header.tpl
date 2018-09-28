@@ -169,7 +169,7 @@
                             <!-- IF user.usertype==='CONSUMER' -->
                             <li id='jobs' ng-class="{ active: isActive('/jobs') }" style="display:none;">
                                 <a href="{config.careerwazeWebAppUrl}/#/recommended/jobs">
-                                    <span class=nav-text><b style="color: #ece2e2 !important;">JOBS</b></span>
+                                    <span class=nav-text><b>JOBS</b></span>
                                 </a>
                             </li>
                             <li ng-class="{ active: isActive('/account') }">
