@@ -21,17 +21,11 @@
         };
         var totalCartItems=0;
         var totalCartItemPrice=0.00;
-       /* document.getElementById("totalCartItems").innerHTML = totalCartItems;
-        document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;*/
-
-         var cookie_name_1='totalCartItems';
-            var cookie_name_2='totalCartItemsPrice';
-            var cookie_1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
-            var cookie_2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
-            console.log("--cookie_1 is : "+JSON.stringify(cookie_1));
-            console.log("--cookie_2 is : "+JSON.stringify(cookie_2));
-            
-            
+        var cookie_name_1='totalCartItems';
+        var cookie_name_2='totalCartItemsPrice';
+        var cookie_1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
+        var cookie_2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
+           
             if(cookie_1[1]!==undefined)
             {
                 totalCartItems=parseInt(cookie_1[1]);
@@ -41,9 +35,7 @@
             {
                 totalCartItemPrice=cookie_2[1];
             }
-             console.log("-**-totalCartItems : "+totalCartItems);
-            console.log("--** totalCartItemPrice : "+totalCartItemPrice);
-
+           
 
         function myFunction() {
             console.log("---in myfunction user object : "+JSON.stringify(app.user));
@@ -52,30 +44,8 @@
             console.log("--r is : "+JSON.stringify(r));
             var IIDT=r[1];
             var APSSDC=r[1];
-            console.log("APSSDC : "+APSSDC);
-            console.log("IIDT :"+IIDT);
-          /*
-            var cookie_name_1='totalCartItems';
-            var cookie_name_2='totalCartItemsPrice';
-            var cookie_1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
-            var cookie_2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
-            console.log("--cookie_1 is : "+JSON.stringify(cookie_1));
-            console.log("--cookie_2 is : "+JSON.stringify(cookie_2));
-            
-            
-            if(cookie_1[1]!==undefined)
-            {
-                totalCartItems=parseInt(cookie_1[1]);
-            }
-            
-            if(cookie_2[1]!==undefined)
-            {
-                totalCartItemPrice=cookie_2[1];
-            }
-             console.log("--totalCartItems : "+totalCartItems);
-            console.log("--totalCartItemPrice : "+totalCartItemPrice);
-          */
-            console.log("--***in myFunction customer id : "+app.user.customer_id);
+           
+           
             if (app.user.usertype === 'CONSUMER' ) 
             {
                 document.getElementById("jobs").style.display = "block";
@@ -103,8 +73,7 @@
                 document.getElementById("user-control-list").children[0].style.display = "block";
                 document.getElementById("user-control-list").children[1].style.display = "block";
                 document.getElementById("user-control-list").children[3].style.display = "block";
-                 document.getElementById("totalCartItems").innerHTML = '7';
-                document.getElementById("totalCartItemPrice").innerHTML ='57';
+                
             }
 
            
@@ -238,7 +207,11 @@
                             </li>
                             <li class="header-cart-count" style="display:none;">
                                 <a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
-                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">iyu<span id="totalCartItems"></span></p>
+                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">
+                                        <script type="text/javascript">
+        document.write(totalCartItems);
+      </script>
+                                    </p>
                                 </a>
                             </li>
                             <li>
