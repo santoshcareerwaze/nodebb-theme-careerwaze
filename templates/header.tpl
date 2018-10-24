@@ -19,6 +19,8 @@
             template: "{template.name}",
             user: JSON.parse('{{userJSON}}')
         };
+        var totalCartItems=0;
+        var totalCartItemPrice=0.00;
         //console.log(JSON.stringify(app));
         function myFunction() {
             console.log("in myfunction user object : "+JSON.stringify(app.user));
@@ -36,18 +38,20 @@
             console.log("cookie_1 is : "+JSON.stringify(cookie_1));
             console.log("cookie_2 is : "+JSON.stringify(cookie_2));
             
-            var totalCartItems=0;
+            
             if(cookie_1[1]!==undefined)
             {
                 totalCartItems=parseInt(cookie_1[1]);
             }
-            var totalCartItemPrice=0.00;
+            
             if(cookie_2[1]!==undefined)
             {
                 totalCartItemPrice=cookie_2[1];
             }
-
-            console.log("in myFunction customer id : "+app.user.customer_id);
+             console.log("totalCartItems : "+totalCartItems);
+            console.log("totalCartItemPrice : "+totalCartItemPrice);
+            
+            console.log("--in myFunction customer id : "+app.user.customer_id);
             if (app.user.usertype === 'CONSUMER' ) 
             {
                 document.getElementById("jobs").style.display = "block";
