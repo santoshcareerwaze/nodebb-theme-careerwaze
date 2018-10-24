@@ -50,7 +50,8 @@
             }
              console.log("totalCartItems : "+totalCartItems);
             console.log("totalCartItemPrice : "+totalCartItemPrice);
-            
+            document.getElementById("totalCartItems").innerHTML = totalCartItems;
+            document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;
             console.log("--in myFunction customer id : "+app.user.customer_id);
             if (app.user.usertype === 'CONSUMER' ) 
             {
@@ -197,9 +198,7 @@
                                 <a href="{config.careerwazeWebAppUrl}/#/account/details">
                                     <span class=nav-text>
                                         <b>MY ACCOUNT</b>
-                                        [[totalCartItems]]
-                                        <b/>
-                                        {{totalCartItemPrice}}
+                                       
                                     </span>
                                 </a>
                             </li>
@@ -212,13 +211,13 @@
                             </li>
                             <li class="header-cart-count" style="display:none;">
                                 <a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
-                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">{totalCartItems}</p>
+                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;"><span id="totalCartItems"></span></p>
                                 </a>
                             </li>
                             <li>
                                 <li style="display:none;">
                                     <a href="{config.careerwazeWebAppUrl}/#/cw-cart" title="Go to CW Shopping cart"  cart="cart-icon-custom">
-                                        <b style="margin-left: -22px;">${totalCartItemPrice}</b>
+                                        <b style="margin-left: -22px;">$<span id="totalCartItemPrice"></span></b>
                                     </a>
                                 </li>
                                 <li class="user-profile-photo-image" style="margin-right: -15px;">
