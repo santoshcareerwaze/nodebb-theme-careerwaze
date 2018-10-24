@@ -197,6 +197,9 @@
                                 <a href="{config.careerwazeWebAppUrl}/#/account/details">
                                     <span class=nav-text>
                                         <b>MY ACCOUNT</b>
+                                        [[totalCartItems]]
+                                        <b/>
+                                        {{totalCartItemPrice}}
                                     </span>
                                 </a>
                             </li>
