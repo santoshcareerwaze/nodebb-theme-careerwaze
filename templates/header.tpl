@@ -21,8 +21,8 @@
         };
         var totalCartItems=0;
         var totalCartItemPrice=0.00;
-        document.getElementById("totalCartItems").innerHTML = totalCartItems;
-        document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;
+       /* document.getElementById("totalCartItems").innerHTML = totalCartItems;
+        document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;*/
         function myFunction() {
             console.log("---in myfunction user object : "+JSON.stringify(app.user));
             var name='customer_id';
@@ -77,13 +77,14 @@
                 document.getElementById("peerlearners").innerHTML = "Peer Learners";
                 document.getElementById("mentors").style.display = "block";
                 document.getElementById("cart").style.display = "block";
-                document.getElementById("user-control-list").children[0].style.display = "block"
-                document.getElementById("user-control-list").children[1].style.display = "block"
-                document.getElementById("user-control-list").children[3].style.display = "block"
+                document.getElementById("user-control-list").children[0].style.display = "block";
+                document.getElementById("user-control-list").children[1].style.display = "block";
+                document.getElementById("user-control-list").children[3].style.display = "block";
+                 document.getElementById("totalCartItems").innerHTML = '7';
+                document.getElementById("totalCartItemPrice").innerHTML ='57';
             }
 
-            document.getElementById("totalCartItems").innerHTML = '7';
-            document.getElementById("totalCartItemPrice").innerHTML ='57';
+           
         }
     </script>
     <script src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
@@ -214,13 +215,13 @@
                             </li>
                             <li class="header-cart-count" style="display:none;">
                                 <a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
-                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;"><span id="totalCartItems"></span></p>
+                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">yu<span id="totalCartItems"></span></p>
                                 </a>
                             </li>
                             <li>
                                 <li style="display:none;">
                                     <a href="{config.careerwazeWebAppUrl}/#/cw-cart" title="Go to CW Shopping cart"  cart="cart-icon-custom">
-                                        <b style="margin-left: -22px;">$<span id="totalCartItemPrice"></span></b>
+                                        <b style="margin-left: -22px;">4$<span id="totalCartItemPrice"></span></b>
                                     </a>
                                 </li>
                                 <li class="user-profile-photo-image" style="margin-right: -15px;">
