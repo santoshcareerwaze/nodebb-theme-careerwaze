@@ -24,10 +24,17 @@
             console.log("in myfunction user object : "+JSON.stringify(app.user));
             var name='customer_id';
             var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+            console.log("r is : "+JSON.stringify(r));
             var IIDT=r[1];
             var APSSDC=r[1];
             console.log("APSSDC : "+APSSDC);
             console.log("IIDT :"+IIDT);
+            var cookie_name_1='totalCartItems';
+            var cookie_name_2='totalCartItemsPrice';
+            var r1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
+            var r2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
+            console.log("r1 is : "+JSON.stringify(r1));
+            console.log("r2 is : "+JSON.stringify(r2));
             
 
             console.log("in myFunction customer id : "+app.user.customer_id);
