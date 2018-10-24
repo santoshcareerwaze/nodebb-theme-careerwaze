@@ -27,7 +27,7 @@
             console.log("---in myfunction user object : "+JSON.stringify(app.user));
             var name='customer_id';
             var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
-            console.log("r is : "+JSON.stringify(r));
+            console.log("--r is : "+JSON.stringify(r));
             var IIDT=r[1];
             var APSSDC=r[1];
             console.log("APSSDC : "+APSSDC);
@@ -82,8 +82,8 @@
                 document.getElementById("user-control-list").children[3].style.display = "block"
             }
 
-            document.getElementById("totalCartItems").innerHTML = totalCartItems;
-            document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;
+            document.getElementById("totalCartItems").innerHTML = '7';
+            document.getElementById("totalCartItemPrice").innerHTML ='57';
         }
     </script>
     <script src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
