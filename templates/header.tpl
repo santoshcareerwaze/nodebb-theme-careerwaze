@@ -215,13 +215,17 @@
                             </li>
                             <li class="header-cart-count" style="display:none;">
                                 <a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
-                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">yu<span id="totalCartItems"></span></p>
+                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">iyu<span id="totalCartItems"></span></p>
                                 </a>
                             </li>
                             <li>
                                 <li style="display:none;">
                                     <a href="{config.careerwazeWebAppUrl}/#/cw-cart" title="Go to CW Shopping cart"  cart="cart-icon-custom">
-                                        <b style="margin-left: -22px;">4$<span id="totalCartItemPrice"></span></b>
+                                        <b style="margin-left: -22px;">$
+<script type="text/javascript">
+        document.write(totalCartItemPrice);
+      </script>
+                                        </b>
                                     </a>
                                 </li>
                                 <li class="user-profile-photo-image" style="margin-right: -15px;">
