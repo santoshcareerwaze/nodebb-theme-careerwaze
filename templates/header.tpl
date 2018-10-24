@@ -23,6 +23,28 @@
         var totalCartItemPrice=0.00;
        /* document.getElementById("totalCartItems").innerHTML = totalCartItems;
         document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;*/
+
+         var cookie_name_1='totalCartItems';
+            var cookie_name_2='totalCartItemsPrice';
+            var cookie_1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
+            var cookie_2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
+            console.log("--cookie_1 is : "+JSON.stringify(cookie_1));
+            console.log("--cookie_2 is : "+JSON.stringify(cookie_2));
+            
+            
+            if(cookie_1[1]!==undefined)
+            {
+                totalCartItems=parseInt(cookie_1[1]);
+            }
+            
+            if(cookie_2[1]!==undefined)
+            {
+                totalCartItemPrice=cookie_2[1];
+            }
+             console.log("-**-totalCartItems : "+totalCartItems);
+            console.log("--** totalCartItemPrice : "+totalCartItemPrice);
+
+
         function myFunction() {
             console.log("---in myfunction user object : "+JSON.stringify(app.user));
             var name='customer_id';
@@ -32,6 +54,7 @@
             var APSSDC=r[1];
             console.log("APSSDC : "+APSSDC);
             console.log("IIDT :"+IIDT);
+          /*
             var cookie_name_1='totalCartItems';
             var cookie_name_2='totalCartItemsPrice';
             var cookie_1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
@@ -51,8 +74,8 @@
             }
              console.log("--totalCartItems : "+totalCartItems);
             console.log("--totalCartItemPrice : "+totalCartItemPrice);
-          
-            console.log("--in myFunction customer id : "+app.user.customer_id);
+          */
+            console.log("--***in myFunction customer id : "+app.user.customer_id);
             if (app.user.usertype === 'CONSUMER' ) 
             {
                 document.getElementById("jobs").style.display = "block";
