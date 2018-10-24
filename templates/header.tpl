@@ -31,11 +31,21 @@
             console.log("IIDT :"+IIDT);
             var cookie_name_1='totalCartItems';
             var cookie_name_2='totalCartItemsPrice';
-            var r1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
-            var r2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
-            console.log("r1 is : "+JSON.stringify(r1));
-            console.log("r2 is : "+JSON.stringify(r2));
+            var cookie_1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
+            var cookie_2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
+            console.log("cookie_1 is : "+JSON.stringify(cookie_1));
+            console.log("cookie_2 is : "+JSON.stringify(cookie_2));
             
+            var totalCartItems=0;
+            if(cookie_1[1]!==undefined)
+            {
+                totalCartItems=parseInt(cookie_1[1]);
+            }
+            var totalCartItemPrice=0.00;
+            if(cookie_2[1]!==undefined)
+            {
+                totalCartItemPrice=cookie_2[1];
+            }
 
             console.log("in myFunction customer id : "+app.user.customer_id);
             if (app.user.usertype === 'CONSUMER' ) 
@@ -195,13 +205,13 @@
                             </li>
                             <li class="header-cart-count" style="display:none;">
                                 <a href="{config.careerwazeWebAppUrl}/#/cw-cart" class="header-cart-count-href">
-                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">o</p>
+                                    <p style="border: 1px solid #37a0f4; background-color: #37a0f4; border-radius: 10px; padding: 0px 5px 0px; margin-left: -15px;margin-top: -10px;color: #fff;">{totalCartItems}</p>
                                 </a>
                             </li>
                             <li>
                                 <li style="display:none;">
-                                    <a href="{config.careerwazeWebAppUrl}/#/cw-cart" title="Go to CW Shopping cart" ng-disabled="cart.getTotalCount() < 1" cart="cart-icon-custom">
-                                        <b style="margin-left: -22px;">$0.00</b>
+                                    <a href="{config.careerwazeWebAppUrl}/#/cw-cart" title="Go to CW Shopping cart"  cart="cart-icon-custom">
+                                        <b style="margin-left: -22px;">${totalCartItemPrice}</b>
                                     </a>
                                 </li>
                                 <li class="user-profile-photo-image" style="margin-right: -15px;">
