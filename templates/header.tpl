@@ -21,9 +21,10 @@
         };
         var totalCartItems=0;
         var totalCartItemPrice=0.00;
-        //console.log(JSON.stringify(app));
+        document.getElementById("totalCartItems").innerHTML = totalCartItems;
+        document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;
         function myFunction() {
-            console.log("in myfunction user object : "+JSON.stringify(app.user));
+            console.log("---in myfunction user object : "+JSON.stringify(app.user));
             var name='customer_id';
             var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
             console.log("r is : "+JSON.stringify(r));
@@ -35,8 +36,8 @@
             var cookie_name_2='totalCartItemsPrice';
             var cookie_1 = document.cookie.match("\\b" + cookie_name_1 + "=([^;]*)\\b");
             var cookie_2 = document.cookie.match("\\b" + cookie_name_2 + "=([^;]*)\\b");
-            console.log("cookie_1 is : "+JSON.stringify(cookie_1));
-            console.log("cookie_2 is : "+JSON.stringify(cookie_2));
+            console.log("--cookie_1 is : "+JSON.stringify(cookie_1));
+            console.log("--cookie_2 is : "+JSON.stringify(cookie_2));
             
             
             if(cookie_1[1]!==undefined)
@@ -48,10 +49,9 @@
             {
                 totalCartItemPrice=cookie_2[1];
             }
-             console.log("totalCartItems : "+totalCartItems);
-            console.log("totalCartItemPrice : "+totalCartItemPrice);
-            document.getElementById("totalCartItems").innerHTML = totalCartItems;
-            document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;
+             console.log("--totalCartItems : "+totalCartItems);
+            console.log("--totalCartItemPrice : "+totalCartItemPrice);
+          
             console.log("--in myFunction customer id : "+app.user.customer_id);
             if (app.user.usertype === 'CONSUMER' ) 
             {
@@ -81,6 +81,9 @@
                 document.getElementById("user-control-list").children[1].style.display = "block"
                 document.getElementById("user-control-list").children[3].style.display = "block"
             }
+
+            document.getElementById("totalCartItems").innerHTML = totalCartItems;
+            document.getElementById("totalCartItemPrice").innerHTML =totalCartItemPrice;
         }
     </script>
     <script src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
